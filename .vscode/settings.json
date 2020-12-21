@@ -1,0 +1,6 @@
+{
+    "go.testEnvFile": "${workspaceFolder}/tests/env/local.env",
+    "go.testEnvVars": {
+        "VALIDATION_FILE_NAME": "${workspaceFolder}/oauth_test"
+    }
+}

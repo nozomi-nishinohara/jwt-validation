@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  jwt-dev:
+    build: .
+    volumes:
+      - .:/src/:delegated
+      - /var/run/docker.sock:/var/run/docker.sock
+    container_name: jwt-dev
+    tty: true

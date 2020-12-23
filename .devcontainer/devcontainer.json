@@ -1,0 +1,15 @@
+{
+	"name": "jwt-dev",
+	"dockerComposeFile": [
+		"../docker-compose.yaml",
+	],
+	"service": "jwt-dev",
+	"workspaceFolder": "/src",
+	"settings": {
+		"terminal.integrated.shell.linux": null
+	},
+	"extensions": [
+		"golang.Go",
+		"yokoe.vscode-postfix-go"
+	]
+}

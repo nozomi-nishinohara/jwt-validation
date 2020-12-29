@@ -10,6 +10,7 @@
 	},
 	"extensions": [
 		"golang.Go",
-		"yokoe.vscode-postfix-go"
+		"yokoe.vscode-postfix-go",
+		"yzhang.markdown-all-in-one"
 	]
 }

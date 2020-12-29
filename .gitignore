@@ -17,3 +17,4 @@ oauth_test.yaml
 tests/redis/nodes*.conf
 tests/redis/r*i.log
 tests/env/local.env
+.DS_Store

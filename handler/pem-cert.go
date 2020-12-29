@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"net/http"
+	"strings"
 
 	"github.com/nozomi-nishinohara/jwt_validation/domain/model"
 	"github.com/nozomi-nishinohara/jwt_validation/domain/repository"
@@ -19,6 +20,9 @@ func savePemCert(repo repository.Cache) error {
 	for _, oauth := range model.GetSetting().Oauths {
 		res, err := http.Get(oauth.JwkSetUri)
 		if err != nil {
+			if strings.Contains(oauth.Domain, "localhost") {
+				return nil
+			}
 			return err
 		}
 		jwks := model.JWKS{}
